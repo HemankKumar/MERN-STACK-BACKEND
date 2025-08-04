@@ -41,3 +41,6 @@ mongoose.connect(server)
 app.use(express.urlencoded(true))
 
 app.use("/save",Routersignup) // using RouterProduct
+app.get("/",(req,resp)=>{
+    resp.send("welcome to server");
+})
